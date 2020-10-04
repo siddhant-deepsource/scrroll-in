@@ -1,0 +1,20 @@
+version = 1
+
+exclude_patterns = [
+    ".github/**",
+    ".vscode/**",
+    "Roboto/**",
+    "images/**",
+    "utils/*.min.js"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  environment = [
+    "nodejs",
+    "browser"
+  ]
+  style_guide = "airbnb"
